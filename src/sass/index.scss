@@ -1,0 +1,103 @@
+@import './common';
+@import './example';
+
+.container {
+    width: 100%;
+    z-index: 500;
+    background-color: #0f31f1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+}
+
+.search-form {
+    height: 35px;
+    justify-content: center;
+    display: flex;
+}
+.gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0 0;
+    list-style: none;
+    display: flex;
+}
+.photo-card {
+    min-width: 300px;
+    transition: transform var(--animation-duration)var(--timing-function);
+    border-radius: 4px;
+    flex-basis: 20%;
+    margin: 12px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%), 0 1px 1px rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%);
+}
+
+.card__image {
+    box-sizing: border-box;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform var(--animation-duration)var(--timing-function);
+    border-radius: 4px 4px 0 0;
+}
+
+.input {
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    padding: 4px;
+    font-size: 16px;
+    box-shadow: 0 2px rgb(0 0 0 / 15%);
+}
+
+.submit-btn {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: rgb(232, 247, 22);
+    border: none;
+    border-radius: 0 4px 4px 0;
+    padding: 4px;
+    transition: background-color .25s cubic-bezier(.4,0,.2,1),color .25s cubic-bezier(.4,0,.2,1),border-bottom .25s cubic-bezier(.4,0,.2,1),box-shadow .25s cubic-bezier(.4,0,.2,1);
+    box-shadow: 0 2px rgb(0 0 0 / 15%);
+}
+.info {
+    text-align: center;
+    margin: 10px 5px;
+    display: flex;
+}
+.info_item {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+button.is-hidden {
+    display: none;
+}
+
+.load-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #0f31f1;
+    transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+}
